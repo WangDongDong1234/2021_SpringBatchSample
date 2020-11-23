@@ -41,7 +41,9 @@ public class JobLaunchJDBC {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		executeJob("ch06/job/job-db-jdbc.xml", "dbReadJob",
-				new JobParametersBuilder().addDate("date", new Date()).addString("id", "5"));
+		executeJob("ch06/job/job-db-jdbc.xml", "dbReadJob1",
+				new JobParametersBuilder().addDate("date", new Date()));
+//		executeJob("ch06/job/job-db-jdbc.xml", "dbReadJob2",
+//				new JobParametersBuilder().addDate("date", new Date()).addString("id", "3"));
 	}
 }

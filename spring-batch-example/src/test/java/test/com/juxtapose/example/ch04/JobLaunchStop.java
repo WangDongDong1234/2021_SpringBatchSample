@@ -34,9 +34,11 @@ public class JobLaunchStop {
 		Job job = (Job) context.getBean(jobName);
 		try {
 			launcher.run(job, builder.toJobParameters());
+			//通过jobOperator查找作业名为jobName的所有正在运行的作业执行器ID
 			Set<Long> runningExecutions = jobOperator.getRunningExecutions(jobName);
 			Iterator<Long> iterator = runningExecutions.iterator();
 			while(iterator.hasNext()){
+				//根据作业执行器ID,发送停止作业的消息
 				boolean sendMessage = jobOperator.stop(iterator.next());
 				System.out.println("sendMessage:" + sendMessage);
 			}

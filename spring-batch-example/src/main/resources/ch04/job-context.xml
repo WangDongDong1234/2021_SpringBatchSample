@@ -49,12 +49,12 @@
 	<!-- 数据源 -->
     <bean:bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
   		<bean:property name="driverClassName">
-   			<bean:value>com.mysql.jdbc.Driver</bean:value>
+   			<bean:value>com.mysql.cj.jdbc.Driver</bean:value>
   		</bean:property>
   		<bean:property name="url">
    			<bean:value>jdbc:mysql://127.0.0.1:3306/test1289</bean:value>
   		</bean:property>
   		<bean:property name="username" value="root"></bean:property>
-  		<bean:property name="password" value="000000"></bean:property>
+  		<bean:property name="password" value="root"></bean:property>
  	</bean:bean>
 </bean:beans>

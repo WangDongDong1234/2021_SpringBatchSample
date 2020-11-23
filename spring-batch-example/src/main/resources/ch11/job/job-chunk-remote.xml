@@ -38,7 +38,7 @@
 			</tasklet>
 		</step>
 	</job>
-
+	<!--8.本地Step负责读取消息，并将对应的Chunk通过JMS队列的方式发送到远端Step进行执行-->
 	<bean:bean id="chunkWriter" scope="step"
 	    class="org.springframework.batch.integration.chunk.ChunkMessageChannelItemWriter" >
 		<bean:property name="messagingOperations" ref="messagingGateway" />
@@ -51,20 +51,23 @@
 		<bean:property name="chunkWriter" ref="chunkWriter" />
 		<bean:property name="step" ref="stepRemoteChunk" />
 	</bean:bean>		
-	
+	<!--对应图11-7-->
+	<!--1。消息网关，负责向requests队列发送消息，从replies队列收取消息-->
 	<bean:bean id="messagingGateway" class="org.springframework.integration.core.MessagingTemplate">
 		<bean:property name="defaultChannel" ref="requests" />
 		<bean:property name="receiveTimeout" value="1000" />
 	</bean:bean>	
-	
+
+	<!--2。定义请求队列requests的adapter-->
 	<int-jms:outbound-channel-adapter connection-factory="connectionFactory" channel="requests"
 		destination-name="requests" />
+	<!--3。定义使用的channel-->
 	<int:channel id="requests" />
 	<int:channel id="incoming" />
-	
+	<!--4。定义消息转换器-->
 	<int:transformer input-channel="incoming" output-channel="replies" 
 	    ref="headerExtractor" method="extract" />
-
+	<!--5。定义响应的channel-->
 	<int:channel id="replies" scope="thread">
 		<int:queue />
 		<int:interceptors>
@@ -86,12 +89,15 @@
 		</int:interceptors>
 	</int:channel>	
 
+	<!--配置AMQ服务器-->
+	<!--6。定义使用的JMS消息模版jmsTemplate-->
 	<bean:bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
 		<bean:property name="connectionFactory" ref="connectionFactory" />
 		<bean:property name="receiveTimeout" value="100" />
 		<bean:property name="sessionTransacted" value="true" />
 	</bean:bean>	
-			
+
+	<!--7。定义使用AMQ服务器，默认使用的端口号为61616-->
 	<amq:broker useJmx="false" persistent="false" schedulerSupport="false">
     	<amq:transportConnectors>
 			<amq:transportConnector uri="tcp://localhost:61616"/>

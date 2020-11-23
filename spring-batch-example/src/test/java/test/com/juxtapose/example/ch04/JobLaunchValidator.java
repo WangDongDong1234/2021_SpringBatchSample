@@ -52,7 +52,7 @@ public class JobLaunchValidator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		executeJobValidatorOK();
+		//executeJobValidatorOK();
 		executeJobValidatorError();
 	}
 }

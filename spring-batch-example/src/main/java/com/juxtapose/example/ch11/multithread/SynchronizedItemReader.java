@@ -14,7 +14,7 @@ import org.springframework.batch.item.ItemStreamException;
  */
 public class SynchronizedItemReader implements ItemReader<CreditBill>, ItemStream{
 
-	private ItemReader<CreditBill> delegate;
+	private ItemReader<CreditBill> delegate;//代理给定的ItemReader，此处我们使用JdbcCursorItemReader
 
 	public synchronized CreditBill read() throws Exception {
 		CreditBill creditBill = delegate.read();
@@ -29,6 +29,7 @@ public class SynchronizedItemReader implements ItemReader<CreditBill>, ItemStrea
 		this.delegate = delegate;
 	}
 
+	//close,open,update实现了ItemStream接口的open，close,update操作
 	public void close() throws ItemStreamException {
 		if (this.delegate instanceof ItemStream) {
 			((ItemStream)this.delegate).close();

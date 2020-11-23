@@ -19,7 +19,7 @@
     <bean:import resource="classpath:ch04/job-context.xml"/>
     
     <!-- 账单作业 -->
-    <job id="billJob" restartable="false">
+    <job id="billJob" restartable="true">
         <step id="billStep">
             <tasklet transaction-manager="transactionManager">
                 <chunk reader="csvItemReader" writer="csvItemWriter" 

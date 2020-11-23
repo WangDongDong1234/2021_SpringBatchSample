@@ -38,26 +38,26 @@
     <job id="retryPolicyJob">
         <step id="retryPolicyStep">
           <tasklet>
-				<chunk reader="reader" processor="alwaysExceptionItemProcessor" writer="writer" 
+				<chunk reader="reader" processor="alwaysExceptionItemProcessor" writer="writer"
 				    commit-interval="1" retry-policy="exceptionClassifierRetryPolicy">
          		</chunk>
 		  </tasklet>
         </step>
     </job>
-    
-    
+
+
     <job id="retryCacheCapacityJob">
         <step id="retryCacheCapacityStep">
           <tasklet>
-				<chunk reader="reader" processor="radomExceptionItemProcessor"  writer="writer" 
+				<chunk reader="reader" processor="radomExceptionItemProcessor"  writer="writer"
 				    commit-interval="1" retry-policy="alwaysRetryPolicy" cache-capacity="1" >
          		</chunk>
 		  </tasklet>
         </step>
     </job>
-    
+
     <bean:bean id="alwaysRetryPolicy" class="org.springframework.batch.retry.policy.AlwaysRetryPolicy" />
-    
+
 	<bean:bean id="exceptionClassifierRetryPolicy" class="org.springframework.batch.retry.policy.ExceptionClassifierRetryPolicy">
 		<bean:property name="policyMap">
 			<bean:map>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6576317-8d02-4628-9d98-0d17b2c9f67b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/spring-batch-example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch06/code/MyAbstractItemCountingItemStreamItemReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch06/code/MyFlatFileItemReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/csdn/entity/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/CreditBill3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/CreditBillEnumFieldSetMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/CreditBillProcessor3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/TypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/reader/MyItemReader1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/reader/MyJdbcPagingItemReader2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/csdn/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/data/fixedlength/credit-card-bill-fixed-length-201303.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/job-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/job/job-flatfile-fixedlength3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/job/job-myread1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/job/job-partition-db2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/properties/batch-mysql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/own/JobLaunchMyFixedLengthFile3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/own/JobLaunchMyRead1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/CreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/CreditBillProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/DummyCreditItemReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/DummyCreditItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/classifiercomposite/CreditBillRouterClassifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/cust/itemwriter/CustomCreditBillItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/cust/itemwriter/RestartableCustomCreditBillItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/db/CreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/db/CreditBillProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/db/DestinationCreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/flat/CreditBillFieldSetMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/flat/CustomLineAggregator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/flat/DefaultFlatFileFooterCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/flat/DefaultFlatFileHeaderCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/hibernate/CreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/hibernate/CreditBillProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/hibernate/DestinationCreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/jdbc/DestCreditBillItemPreparedStatementSetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/jms/JMSDetectItemWriteListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/jpa/CreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/jpa/CreditBillProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/jpa/DestinationCreditBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/listener/ErrorItemWriteListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/listener/SystemOutAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/listener/SystemOutItemWriteListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/mail/MailItemProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/multiresource/ext/ExtMultiResourceItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/reuse/ExistService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/xml/FooterStaxWriterCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch07/xml/HeaderStaxWriterCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/AlwaysExceptionItemProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/AutoReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/ConsoleWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/MockARuntimeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/MockBRuntimeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/RadomExceptionItemProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/SystemOutRetryListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/BackOffContextImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/CountHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/CountRetryListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/CreditBillTasklet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/DefaultBackoffPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/DefaultRecoveryCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/DefaultRetryCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/retry/template/RetryTemplateExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/skip/AutoReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/skip/ConsoleWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/skip/DBSkipListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/skip/RadomExceptionAutoReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch10/skip/RadomExceptionItemProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/multithread/SynchronizedItemReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/multithread/SynchronizedItemReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/PartitionStepExecutionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/PartitionStepExecutionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/db/DBpartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/db/DBpartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/db/PartitionStepExecutionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/db/PartitionStepExecutionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch02/data/credit-card-bill-201303.csv" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch02/data/credit-card-bill-201303.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/data/credit-card-bill-201303.csv" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/data/credit-card-bill-201303.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/job-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/job-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/job/job.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/job/job.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch03/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job-context-exitstatus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job-context-exitstatus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job/job-restart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job/job-restart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job/job-stepscope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job/job-stepscope.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job/job-stop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/job/job-stop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/webapp/batchapp/WEB-INF/job-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch04/webapp/batchapp/WEB-INF/job-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/job/job-step-chunk-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/job/job-step-chunk-transaction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/job/job-step-retry.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/job/job-step-retry.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/job/job-step-tasklet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/job/job-step-tasklet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch05/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch06/job/job-db-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch06/job/job-db-jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch06/job/job-flatfile-fixedlength.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch06/job/job-flatfile-fixedlength.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch06/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch06/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/cfg/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/data/flat/credit-card-bill-201310.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/data/xml/credit-card-bill-201310.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/db/create-tables-mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/ibatis/ibatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/ibatis/ibatis-credit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/ibatis/ibatis-destcredit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job-context-jpa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-composite-classify.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-composite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-custom-itemwriter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-db-hibernate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-db-ibatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-db-jdbc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-db-jpa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-filesets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-flatfile-callback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-flatfile-custom-aggregator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-flatfile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-java-mail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-jms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-listener.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-reuse-service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-xml-callback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/job/job-xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/jpa/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/properties/batch-mail.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch07/properties/batch-mysql.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch08/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch08/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch09/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch09/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/db/create-table-skipbills.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/db/create-tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job-context-db.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job/job-step-retry-listener.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job/job-step-retry-tasklet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job/job-step-retry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job/job-step-skip-listener.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/job/job-step-skip.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch10/properties/batch-mysql.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/job/job-chunk-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/job/job-chunk-remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/job/job-multithreade-db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/job/job-multithreade-db.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/job/job-partition-file.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/job/job-partition-file.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/properties/batch-mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/main/resources/ch11/properties/batch-mysql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch03/JobLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch03/JobLaunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch04/JobLaunchStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch04/JobLaunchStop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch04/JobLaunchValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch04/JobLaunchValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch05/JobLaunchCustTasklet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch05/JobLaunchCustTasklet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch06/JobLaunchJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch06/JobLaunchJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchClassifierComposite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchComposite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchCustomItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchCustomItemWriterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchErrorListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchFileSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/own/JobLaunchPartitionDB2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchFileSetsExt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchFlatFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchFlatFileCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchFlatFileCustomLineAggregator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchHibernate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchIbatis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchJMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchJavaMail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchJpa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchListenerMerge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchRestartableCustomItemWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchReuseServicePropertyExtractWrite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchReuseServiceWrite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchXml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch07/JobLaunchXmlCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchCacheCapacity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchRetry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchRetryListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchRetryPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchRetryTasklet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchSkip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/JobLaunchSkipListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch10/RetryTemplateTestCase.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mymaster" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hFwJsRoUGneiLwJMZeuDfCbZyH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/data/fixedlength" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example" />
+      <recent name="$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.com.juxtapose.example.own" />
+      <recent name="com.juxtapose.example.own" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/data/fixedlength" />
+      <recent name="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/job" />
+      <recent name="$PROJECT_DIR$/spring-batch-example/src/main/resources/own/data.fixedlength" />
+      <recent name="$PROJECT_DIR$/spring-batch-example/src/main/resources/own" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JobLaunchMyFixedLengthFile3">
+    <configuration name="JobLaunchJDBCPaging" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.com.juxtapose.example.ch06.JobLaunchJDBCPaging" />
+      <module name="spring-batch-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.com.juxtapose.example.ch06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobLaunchMyFixedLengthFile3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.com.juxtapose.example.own.JobLaunchMyFixedLengthFile3" />
+      <module name="spring-batch-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.com.juxtapose.example.own.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobLaunchPartitionDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.com.juxtapose.example.ch11.JobLaunchPartitionDB" />
+      <module name="spring-batch-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.com.juxtapose.example.ch11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobLaunchPartitionDB2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.com.juxtapose.example.own.JobLaunchPartitionDB2" />
+      <module name="spring-batch-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.com.juxtapose.example.own.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juxtapose.example.own.test.TT" />
+      <module name="spring-batch-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juxtapose.example.own.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JobLaunchMyFixedLengthFile3" />
+        <item itemvalue="Application.TT" />
+        <item itemvalue="Application.JobLaunchPartitionDB" />
+        <item itemvalue="Application.JobLaunchPartitionDB2" />
+        <item itemvalue="Application.JobLaunchJDBCPaging" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6576317-8d02-4628-9d98-0d17b2c9f67b" name="Default Changelist" comment="" />
+      <created>1599620078404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599620078404</updated>
+      <workItem from="1599620080379" duration="2244000" />
+      <workItem from="1599811514283" duration="67153000" />
+      <workItem from="1601174643952" duration="605000" />
+      <workItem from="1601192256040" duration="6799000" />
+      <workItem from="1601262037135" duration="6247000" />
+      <workItem from="1601836756248" duration="4454000" />
+      <workItem from="1602488394869" duration="23382000" />
+      <workItem from="1602820509240" duration="19130000" />
+      <workItem from="1603683768404" duration="15531000" />
+      <workItem from="1603767995454" duration="9179000" />
+      <workItem from="1603791661688" duration="21822000" />
+      <workItem from="1604283971272" duration="8795000" />
+      <workItem from="1604461236850" duration="2402000" />
+      <workItem from="1605687515774" duration="1307000" />
+      <workItem from="1605753505044" duration="11716000" />
+      <workItem from="1606103589809" duration="2465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="196" key="#com.intellij.ide.util.MemberChooser" timestamp="1605779935927">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="634" y="196" key="#com.intellij.ide.util.MemberChooser/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605779935927" />
+    <state x="2404" y="217" key="#com.intellij.ide.util.MemberChooser/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603803769314" />
+    <state x="2404" y="217" key="#com.intellij.ide.util.MemberChooser/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603337602894" />
+    <state x="189" y="426" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605775672804">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="189" y="426" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605775672804" />
+    <state x="605" y="203" key="#xdebugger.evaluate" timestamp="1605789950145">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="605" y="203" key="#xdebugger.evaluate/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605789950145" />
+    <state x="605" y="205" key="#xdebugger.evaluate/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600954228132" />
+    <state x="2454" y="483" key="Github.ShareDialog" timestamp="1606136780617">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2454" y="483" key="Github.ShareDialog/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1606136780617" />
+    <state width="1638" height="384" key="GridCell.Tab.0.bottom" timestamp="1605790067339">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.bottom/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067339" />
+    <state width="1878" height="44" key="GridCell.Tab.0.bottom/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851444910" />
+    <state width="1878" height="275" key="GridCell.Tab.0.bottom/0.23.1680.944@0.23.1680.944" timestamp="1604316198735" />
+    <state width="1638" height="407" key="GridCell.Tab.0.bottom/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603869998308" />
+    <state width="1638" height="288" key="GridCell.Tab.0.bottom/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603338024160" />
+    <state width="1638" height="239" key="GridCell.Tab.0.bottom/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1602492688233" />
+    <state width="1638" height="254" key="GridCell.Tab.0.bottom/0.23.1680.949/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600141895407" />
+    <state width="1878" height="2" key="GridCell.Tab.0.bottom/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077919" />
+    <state width="1638" height="303" key="GridCell.Tab.0.bottom/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322630" />
+    <state width="1638" height="194" key="GridCell.Tab.0.bottom/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600956696786" />
+    <state width="1638" height="321" key="GridCell.Tab.0.bottom/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1603956448955" />
+    <state width="1638" height="321" key="GridCell.Tab.0.bottom/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952672463" />
+    <state width="1638" height="376" key="GridCell.Tab.0.bottom/0.23.1680.961/1680.23.1920.1057@0.23.1680.961" timestamp="1600238978280" />
+    <state width="1638" height="303" key="GridCell.Tab.0.bottom/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613637" />
+    <state width="1638" height="314" key="GridCell.Tab.0.bottom/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465421" />
+    <state width="1638" height="202" key="GridCell.Tab.0.bottom/0.23.1680.967/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161810844" />
+    <state width="1638" height="254" key="GridCell.Tab.0.bottom/0.23.1680.973/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600160991962" />
+    <state width="1638" height="384" key="GridCell.Tab.0.center" timestamp="1605790067338">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.center/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067338" />
+    <state width="1878" height="44" key="GridCell.Tab.0.center/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851444909" />
+    <state width="1878" height="275" key="GridCell.Tab.0.center/0.23.1680.944@0.23.1680.944" timestamp="1604316198734" />
+    <state width="1638" height="407" key="GridCell.Tab.0.center/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603869998308" />
+    <state width="1638" height="288" key="GridCell.Tab.0.center/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603338024159" />
+    <state width="1638" height="239" key="GridCell.Tab.0.center/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1602492688233" />
+    <state width="1638" height="254" key="GridCell.Tab.0.center/0.23.1680.949/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600141895406" />
+    <state width="1878" height="2" key="GridCell.Tab.0.center/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077918" />
+    <state width="1638" height="303" key="GridCell.Tab.0.center/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322630" />
+    <state width="1638" height="194" key="GridCell.Tab.0.center/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600956696785" />
+    <state width="1638" height="321" key="GridCell.Tab.0.center/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1603956448954" />
+    <state width="1638" height="321" key="GridCell.Tab.0.center/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952672462" />
+    <state width="1638" height="376" key="GridCell.Tab.0.center/0.23.1680.961/1680.23.1920.1057@0.23.1680.961" timestamp="1600238978279" />
+    <state width="1638" height="303" key="GridCell.Tab.0.center/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613636" />
+    <state width="1638" height="314" key="GridCell.Tab.0.center/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465420" />
+    <state width="1638" height="202" key="GridCell.Tab.0.center/0.23.1680.967/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161810843" />
+    <state width="1638" height="254" key="GridCell.Tab.0.center/0.23.1680.973/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600160991961" />
+    <state width="1638" height="384" key="GridCell.Tab.0.left" timestamp="1605790067337">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.left/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067337" />
+    <state width="1878" height="44" key="GridCell.Tab.0.left/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851444908" />
+    <state width="1878" height="275" key="GridCell.Tab.0.left/0.23.1680.944@0.23.1680.944" timestamp="1604316198734" />
+    <state width="1638" height="407" key="GridCell.Tab.0.left/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603869998307" />
+    <state width="1638" height="288" key="GridCell.Tab.0.left/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603338024158" />
+    <state width="1638" height="239" key="GridCell.Tab.0.left/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1602492688232" />
+    <state width="1638" height="254" key="GridCell.Tab.0.left/0.23.1680.949/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600141895405" />
+    <state width="1878" height="2" key="GridCell.Tab.0.left/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077917" />
+    <state width="1638" height="303" key="GridCell.Tab.0.left/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322629" />
+    <state width="1638" height="194" key="GridCell.Tab.0.left/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600956696784" />
+    <state width="1638" height="321" key="GridCell.Tab.0.left/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1603956448954" />
+    <state width="1638" height="321" key="GridCell.Tab.0.left/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952672461" />
+    <state width="1638" height="376" key="GridCell.Tab.0.left/0.23.1680.961/1680.23.1920.1057@0.23.1680.961" timestamp="1600238978278" />
+    <state width="1638" height="303" key="GridCell.Tab.0.left/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613636" />
+    <state width="1638" height="314" key="GridCell.Tab.0.left/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465420" />
+    <state width="1638" height="202" key="GridCell.Tab.0.left/0.23.1680.967/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161810842" />
+    <state width="1638" height="254" key="GridCell.Tab.0.left/0.23.1680.973/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600160991961" />
+    <state width="1638" height="384" key="GridCell.Tab.0.right" timestamp="1605790067339">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.0.right/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067339" />
+    <state width="1878" height="44" key="GridCell.Tab.0.right/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851444909" />
+    <state width="1878" height="275" key="GridCell.Tab.0.right/0.23.1680.944@0.23.1680.944" timestamp="1604316198734" />
+    <state width="1638" height="407" key="GridCell.Tab.0.right/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603869998308" />
+    <state width="1638" height="288" key="GridCell.Tab.0.right/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603338024159" />
+    <state width="1638" height="239" key="GridCell.Tab.0.right/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1602492688233" />
+    <state width="1638" height="254" key="GridCell.Tab.0.right/0.23.1680.949/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600141895407" />
+    <state width="1878" height="2" key="GridCell.Tab.0.right/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077918" />
+    <state width="1638" height="303" key="GridCell.Tab.0.right/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322630" />
+    <state width="1638" height="194" key="GridCell.Tab.0.right/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600956696785" />
+    <state width="1638" height="321" key="GridCell.Tab.0.right/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1603956448955" />
+    <state width="1638" height="321" key="GridCell.Tab.0.right/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952672462" />
+    <state width="1638" height="376" key="GridCell.Tab.0.right/0.23.1680.961/1680.23.1920.1057@0.23.1680.961" timestamp="1600238978279" />
+    <state width="1638" height="303" key="GridCell.Tab.0.right/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613637" />
+    <state width="1638" height="314" key="GridCell.Tab.0.right/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465421" />
+    <state width="1638" height="202" key="GridCell.Tab.0.right/0.23.1680.967/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161810844" />
+    <state width="1638" height="254" key="GridCell.Tab.0.right/0.23.1680.973/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600160991962" />
+    <state width="1638" height="384" key="GridCell.Tab.1.bottom" timestamp="1605790067342">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.1.bottom/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067342" />
+    <state width="1878" height="245" key="GridCell.Tab.1.bottom/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851447393" />
+    <state width="1878" height="275" key="GridCell.Tab.1.bottom/0.23.1680.944@0.23.1680.944" timestamp="1604316200696" />
+    <state width="1638" height="407" key="GridCell.Tab.1.bottom/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603870004025" />
+    <state width="1638" height="288" key="GridCell.Tab.1.bottom/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603337961995" />
+    <state width="1638" height="532" key="GridCell.Tab.1.bottom/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1600335923106" />
+    <state width="1878" height="2" key="GridCell.Tab.1.bottom/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077921" />
+    <state width="1638" height="303" key="GridCell.Tab.1.bottom/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322632" />
+    <state width="1638" height="303" key="GridCell.Tab.1.bottom/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600953791587" />
+    <state width="1638" height="303" key="GridCell.Tab.1.bottom/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1600952060203" />
+    <state width="1638" height="2" key="GridCell.Tab.1.bottom/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952246306" />
+    <state width="1638" height="303" key="GridCell.Tab.1.bottom/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613638" />
+    <state width="1638" height="314" key="GridCell.Tab.1.bottom/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465424" />
+    <state width="1638" height="384" key="GridCell.Tab.1.center" timestamp="1605790067341">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.1.center/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067341" />
+    <state width="1878" height="245" key="GridCell.Tab.1.center/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851447392" />
+    <state width="1878" height="275" key="GridCell.Tab.1.center/0.23.1680.944@0.23.1680.944" timestamp="1604316200696" />
+    <state width="1638" height="407" key="GridCell.Tab.1.center/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603870004024" />
+    <state width="1638" height="288" key="GridCell.Tab.1.center/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603337961994" />
+    <state width="1638" height="532" key="GridCell.Tab.1.center/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1600335923103" />
+    <state width="1878" height="2" key="GridCell.Tab.1.center/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077920" />
+    <state width="1638" height="303" key="GridCell.Tab.1.center/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322631" />
+    <state width="1638" height="303" key="GridCell.Tab.1.center/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600953791586" />
+    <state width="1638" height="303" key="GridCell.Tab.1.center/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1600952060202" />
+    <state width="1638" height="2" key="GridCell.Tab.1.center/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952246305" />
+    <state width="1638" height="303" key="GridCell.Tab.1.center/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613638" />
+    <state width="1638" height="314" key="GridCell.Tab.1.center/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465423" />
+    <state width="1638" height="384" key="GridCell.Tab.1.left" timestamp="1605790067340">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.1.left/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067340" />
+    <state width="1878" height="245" key="GridCell.Tab.1.left/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851447392" />
+    <state width="1878" height="275" key="GridCell.Tab.1.left/0.23.1680.944@0.23.1680.944" timestamp="1604316200695" />
+    <state width="1638" height="407" key="GridCell.Tab.1.left/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603870004023" />
+    <state width="1638" height="288" key="GridCell.Tab.1.left/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603337961994" />
+    <state width="1638" height="532" key="GridCell.Tab.1.left/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1600335923102" />
+    <state width="1878" height="2" key="GridCell.Tab.1.left/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077920" />
+    <state width="1638" height="303" key="GridCell.Tab.1.left/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322631" />
+    <state width="1638" height="303" key="GridCell.Tab.1.left/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600953791586" />
+    <state width="1638" height="303" key="GridCell.Tab.1.left/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1600952060201" />
+    <state width="1638" height="2" key="GridCell.Tab.1.left/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952246305" />
+    <state width="1638" height="303" key="GridCell.Tab.1.left/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613638" />
+    <state width="1638" height="314" key="GridCell.Tab.1.left/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465422" />
+    <state width="1638" height="384" key="GridCell.Tab.1.right" timestamp="1605790067341">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="384" key="GridCell.Tab.1.right/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605790067341" />
+    <state width="1878" height="245" key="GridCell.Tab.1.right/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603851447393" />
+    <state width="1878" height="275" key="GridCell.Tab.1.right/0.23.1680.944@0.23.1680.944" timestamp="1604316200696" />
+    <state width="1638" height="407" key="GridCell.Tab.1.right/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603870004024" />
+    <state width="1638" height="288" key="GridCell.Tab.1.right/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603337961995" />
+    <state width="1638" height="532" key="GridCell.Tab.1.right/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1600335923104" />
+    <state width="1878" height="2" key="GridCell.Tab.1.right/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407077921" />
+    <state width="1638" height="303" key="GridCell.Tab.1.right/0.23.1680.954/1680.23.1920.1057@0.23.1680.954" timestamp="1600956322631" />
+    <state width="1638" height="303" key="GridCell.Tab.1.right/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600953791587" />
+    <state width="1638" height="303" key="GridCell.Tab.1.right/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1600952060202" />
+    <state width="1638" height="2" key="GridCell.Tab.1.right/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1603952246306" />
+    <state width="1638" height="303" key="GridCell.Tab.1.right/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1601174613638" />
+    <state width="1638" height="314" key="GridCell.Tab.1.right/0.23.1680.966/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600161465424" />
+    <state x="2079" y="85" key="SettingsEditor" timestamp="1603332366149">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2079" y="85" key="SettingsEditor/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603332366149" />
+    <state width="521" height="442" key="SwitcherDM" timestamp="1604317093408">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="520" height="441" key="SwitcherDM/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1602570795433" />
+    <state width="521" height="442" key="SwitcherDM/0.23.1680.944@0.23.1680.944" timestamp="1604317093408" />
+    <state width="595" height="494" key="SwitcherDM/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603338866031" />
+    <state width="520" height="445" key="SwitcherDM/0.23.1680.956/1680.23.1920.1057@0.23.1680.956" timestamp="1600952665647" />
+    <state width="520" height="445" key="SwitcherDM/0.23.1680.958/1680.23.1920.1057@0.23.1680.958" timestamp="1600950221721" />
+    <state width="520" height="445" key="SwitcherDM/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1600947593808" />
+    <state width="520" height="451" key="SwitcherDM/0.23.1680.967/1680.23.1920.1057@0.23.1680.967" timestamp="1601033547878" />
+    <state x="2217" y="319" key="Vcs.Push.Dialog.v2" timestamp="1606137058461">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2217" y="319" key="Vcs.Push.Dialog.v2/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1606137058461" />
+    <state x="379" y="112" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602556543080">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="379" y="112" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1602556543080" />
+    <state x="244" y="231" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604315559893">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="1959" y="238" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1603453593002" />
+    <state x="244" y="231" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1602561226722" />
+    <state x="244" y="231" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1680.944@0.23.1680.944" timestamp="1604315559893" />
+    <state x="412" y="141" width="1044" height="732" key="find.popup" timestamp="1605789129121">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="2147" y="155" width="934" height="820" key="find.popup/0.23.1680.1027/1680.23.1920.974@1680.23.1920.974" timestamp="1603702020791" />
+    <state x="412" y="141" width="1044" height="732" key="find.popup/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1605789129121" />
+    <state x="2378" y="211" width="934" height="820" key="find.popup/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1605754341168" />
+    <state x="409" y="141" width="1044" height="732" key="find.popup/0.23.1680.944@0.23.1680.944" timestamp="1604315732458" />
+    <state x="555" y="128" width="785" height="734" key="find.popup/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603869920712" />
+    <state x="2147" y="155" width="934" height="820" key="find.popup/0.23.1680.947/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603338735352" />
+    <state x="555" y="129" width="782" height="735" key="find.popup/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1600679951144" />
+    <state x="409" y="142" width="1044" height="739" key="find.popup/0.23.1680.952/1680.23.1920.1057@0.23.1680.952" timestamp="1604407406849" />
+    <state x="555" y="130" width="819" height="744" key="find.popup/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1600939194275" />
+    <state x="555" y="130" width="782" height="744" key="find.popup/0.23.1680.961/1680.23.1920.1057@0.23.1680.961" timestamp="1600238628048" />
+    <state x="555" y="130" width="782" height="746" key="find.popup/0.23.1680.963/1680.23.1920.1057@0.23.1680.963" timestamp="1600241424831" />
+    <state x="555" y="131" width="819" height="749" key="find.popup/0.23.1680.966/1680.23.1920.1057@0.23.1680.966" timestamp="1601001957560" />
+    <state x="555" y="131" width="819" height="750" key="find.popup/0.23.1680.967/1680.23.1920.1057@0.23.1680.967" timestamp="1601033572441" />
+    <state x="244" y="143" key="new project wizard" timestamp="1605865768018">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="244" y="143" key="new project wizard/0.0.1680.1050/1680.0.1920.1080@0.0.1680.1050" timestamp="1605865768018" />
+    <state x="1959" y="167" key="new project wizard/0.23.1680.944/1680.23.1920.1057@1680.23.1920.1057" timestamp="1603791687570" />
+    <state x="522" y="229" width="670" height="674" key="search.everywhere.popup" timestamp="1604299699912">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="522" y="229" width="670" height="674" key="search.everywhere.popup/0.23.1680.944/1680.23.1920.1057@0.23.1680.944" timestamp="1604299699912" />
+    <state x="522" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947/1680.23.1920.1057@0.23.1680.947" timestamp="1603869734381" />
+    <state x="522" y="230" width="670" height="678" key="search.everywhere.popup/0.23.1680.949/1680.23.1920.1057@0.23.1680.949" timestamp="1599816413829" />
+    <state x="522" y="232" width="670" height="686" key="search.everywhere.popup/0.23.1680.960/1680.23.1920.1057@0.23.1680.960" timestamp="1600939181775" />
+    <state x="2277" y="253" width="766" height="756" key="search.everywhere.popup/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1600241449423" />
+    <state x="522" y="234" width="670" height="692" key="search.everywhere.popup/0.23.1680.967/1680.23.1920.1057@0.23.1680.967" timestamp="1601027289872" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch04/JobLaunchValidator.java</url>
+          <line>53</line>
+          <properties class="test.com.juxtapose.example.ch04.JobLaunchValidator" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/test/java/test/com/juxtapose/example/ch08/JobLaunchValidate.java</url>
+          <line>21</line>
+          <properties class="test.com.juxtapose.example.ch08.JobLaunchValidate" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/support/AbstractItemCountingItemStreamItemReader.java</url>
+          <line>58</line>
+          <properties class="org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader" method="doOpen">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/2.2.1.RELEASE/spring-batch-core-2.2.1.RELEASE.jar!/org/springframework/batch/core/repository/support/SimpleJobRepository.class</url>
+          <line>214</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/transform/DelimitedLineTokenizer.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch06/flat/CreditBillFieldSetMapper.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch06/flat/DefaultLineCallbackHandler.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/transform/BeanWrapperFieldExtractor.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/transform/BeanWrapperFieldExtractor.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>201</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>212</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>222</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/MultiResourceItemReader.java</url>
+          <line>242</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/support/AbstractItemCountingItemStreamItemReader.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/support/AbstractItemCountingItemStreamItemReader.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/separator/SimpleRecordSeparatorPolicy.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/separator/SimpleRecordSeparatorPolicy.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/separator/DefaultRecordSeparatorPolicy.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>236</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>277</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>283</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/file/FlatFileItemReader.java</url>
+          <line>289</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/support/AbstractItemCountingItemStreamItemReader.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/support/AbstractItemCountingItemStreamItemReader.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch06/flat/CreditBillFieldSetMapper.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/reader/MyItemReader1.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/reader/MyItemReader1.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/2.2.1.RELEASE/spring-batch-core-2.2.1.RELEASE.jar!/org/springframework/batch/core/partition/support/MultiResourcePartitioner.class</url>
+          <line>32</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/PartitionStepExecutionListener.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/reader/MyJdbcPagingItemReader2.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/database/JdbcPagingItemReader.java</url>
+          <line>254</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-infrastructure/2.2.1.RELEASE/spring-batch-infrastructure-2.2.1.RELEASE-sources.jar!/org/springframework/batch/item/database/JdbcPagingItemReader.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/reader/MyJdbcPagingItemReader2.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/ch11/partition/db/DBpartition.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/2.2.1.RELEASE/spring-batch-core-2.2.1.RELEASE-sources.jar!/org/springframework/batch/core/partition/support/AbstractPartitionHandler.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/2.2.1.RELEASE/spring-batch-core-2.2.1.RELEASE-sources.jar!/org/springframework/batch/core/partition/support/SimpleStepExecutionSplitter.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/2.2.1.RELEASE/spring-batch-core-2.2.1.RELEASE-sources.jar!/org/springframework/batch/core/partition/support/TaskExecutorPartitionHandler.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/CreditBillProcessor3.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/CreditBillEnumFieldSetMapper.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-batch-example/src/main/java/com/juxtapose/example/own/demo1/TypeEnum.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

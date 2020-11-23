@@ -18,6 +18,7 @@
     http://www.springframework.org/schema/batch/spring-batch-2.2.xsd">
     <bean:import resource="classpath:ch05/job-context.xml"/>
 
+    <!--指定异常不回滚-->
     <job id="chunkJob">
         <step id="chunkStep">
           <tasklet transaction-manager="transactionManager" start-limit="1">
@@ -28,7 +29,8 @@
 		  </tasklet>
         </step>
     </job>
-    
+
+    <!--重启step的次数-->
     <job id="startLimitJob">
         <step id="startLimitStep">
           <tasklet start-limit="1">
@@ -36,7 +38,8 @@
 		  </tasklet>
         </step>
     </job>
-    
+
+    <!--已完成的step是否允许重启-->
     <job id="allowStartJob">
         <step id="allowStartStep">
           <tasklet allow-start-if-complete="true">
@@ -44,7 +47,8 @@
 		  </tasklet>
         </step>
     </job>
-    
+
+    <!--多线程并行执行step-->
     <job id="multiThreadJob">
         <step id="multiThreadStep">
           <tasklet task-executor="taskExecutor" throttle-limit="6">
@@ -52,21 +56,21 @@
 		  </tasklet>
         </step>
     </job>
-    
+    <!--自定义的tasklet-->
     <job id="custTaskletJob">
         <step id="custTaskletStep">
            <tasklet ref="helloWorldTasklet">
 			</tasklet>	
         </step>
     </job>
-    
+    <!--使用代理的方式-->
     <job id="taskletAdapterJob">
         <step id="taskletAdapterStep">
            <tasklet ref="adapter">
 			</tasklet>	
         </step>
     </job>
-    
+    <!--直接调用其它服务-->
     <job id="helloWorldServiceJob">
         <step id="helloWorldServiceStep">
            <tasklet ref="helloWorldService" method="hello">

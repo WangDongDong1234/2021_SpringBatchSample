@@ -20,16 +20,18 @@ public class DBpartition implements Partitioner {
 	private static final String _MAXRECORD = "_maxRecord";
 	private static final String MIN_SELECT_PATTERN = "select min({0}) from {1}";
 	private static final String MAX_SELECT_PATTERN = "select max({0}) from {1}";
-	private JdbcTemplate jdbcTemplate ;
-	private DataSource dataSource;
-	private String table ;
-	private String column;
+	private JdbcTemplate jdbcTemplate ;//根据dataSource来初始化
+	private DataSource dataSource;//xml中配置
+	private String table ;//xml中配置
+	private String column;//xml中配置
 	
 	public Map<String, ExecutionContext> partition(int gridSize) {
 		validateAndInit();
 		Map<String, ExecutionContext> resultMap = new HashMap<String, ExecutionContext>();
+		//根据主键计算最小值
 		int min = jdbcTemplate.queryForInt(MessageFormat.format(MIN_SELECT_PATTERN, new Object[]{column,table}));
 		int max = jdbcTemplate.queryForInt(MessageFormat.format(MAX_SELECT_PATTERN, new Object[]{column,table}));
+		//按照gridSize分成几个小块
 		int targetSize = (max-min)/gridSize +1;
 		int number=0;
 		int start =min;

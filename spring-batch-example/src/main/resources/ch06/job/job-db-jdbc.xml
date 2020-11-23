@@ -25,8 +25,8 @@
 		<jdbc:script location="classpath:/ch06/db/create-tables-mysql.sql" />
 	</jdbc:initialize-database>
     
-    <job id="dbReadJob">
-        <step id="dbReadStep">
+    <job id="dbReadJob2">
+        <step id="dbReadStep2">
             <tasklet transaction-manager="transactionManager">
                 <chunk reader="jdbcParameterItemReader" processor="creditBillProcessor" writer="creditItemWriter" commit-interval="2"></chunk>
             </tasklet>
@@ -55,7 +55,14 @@
     <bean:bean id="custPreparedStatementSetter" class="com.juxtapose.example.ch06.db.CreditBillPreparedStatementSetter"/>
     
     <!-- End参数化读取db -->
-    
+
+    <job id="dbReadJob1">
+        <step id="dbReadStep1">
+            <tasklet transaction-manager="transactionManager">
+                <chunk reader="jdbcItemReader" processor="creditBillProcessor" writer="creditItemWriter" commit-interval="2"></chunk>
+            </tasklet>
+        </step>
+    </job>
 	<!-- 读取db -->
     <bean:bean id="jdbcItemReader" scope="step"
         class="org.springframework.batch.item.database.JdbcCursorItemReader" >

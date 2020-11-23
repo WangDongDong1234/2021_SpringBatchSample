@@ -24,7 +24,7 @@
         <step id="transactionPolicyStep">
           <tasklet>
 				<chunk reader="reader" processor="processor" writer="writer" 
-				    commit-interval="5" processor-transactional="true" retry-limit="3">
+				    commit-interval="5" processor-transactional="false" retry-limit="3">
 				    <retryable-exception-classes>
 				        <include class="java.lang.RuntimeException" />
 				    </retryable-exception-classes>

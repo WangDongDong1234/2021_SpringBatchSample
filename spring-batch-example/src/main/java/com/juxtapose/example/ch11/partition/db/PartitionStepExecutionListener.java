@@ -16,6 +16,7 @@ import org.springframework.batch.core.StepExecutionListener;
 public class PartitionStepExecutionListener implements StepExecutionListener {
 	@Override
 	public void beforeStep(StepExecution stepExecution) {
+		System.out.println(stepExecution);
 		System.out.println("ThreadName=" + Thread.currentThread().getName() + "; " 
 				+ "StepName=" + stepExecution.getStepName() + ";");
 	}

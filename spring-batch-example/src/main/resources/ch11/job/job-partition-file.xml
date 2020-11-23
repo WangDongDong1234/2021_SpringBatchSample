@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bean:beans xmlns="http://www.springframework.org/schema/batch"    
-    xmlns:bean="http://www.springframework.org/schema/beans" 
+    xmlns:bean="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    
     xmlns:p="http://www.springframework.org/schema/p" 
     xmlns:tx="http://www.springframework.org/schema/tx"    
@@ -21,12 +21,15 @@
     
     <job id="partitionJob">
 		<step id="partitionStep">
+			<!--属性step声明了引用的作业步的名称-->
+			<!--partition引用指定的分区规则，子元素handler用于指定使用的本地处理的线程池-->
+
 			<partition step="partitionReadWriteStep" partitioner="filePartitioner">
 				<handler grid-size="2" task-executor="taskExecutor"/>
 			</partition>
 		</step>
 	</job>
-	
+
 	<step id="partitionReadWriteStep">
 		<tasklet>
 			<chunk reader="flatFileItemReader" writer="jdbcItemWriter" 
@@ -36,13 +39,17 @@
              </listeners>
 		</tasklet>
 	</step>
-	
+
+	<!--读分区规则-->
 	<bean:bean id="filePartitioner" 
 	    class="org.springframework.batch.core.partition.support.MultiResourcePartitioner">
+		<!--属性keyName用于执行作业步上下文中属性的名字-->
 		<bean:property name="keyName" value="fileName"/>
+		<!--定义需要分区的文件集，使用MultiResourcePartitioner的时候，要求根据统一的后缀名-->
 		<bean:property name="resources" value="classpath:/ch11/data/*.csv"/>
 	</bean:bean>
-	
+
+	<!--定义文件读-->
 	<bean:bean id="flatFileItemReader" scope="step"
         class="org.springframework.batch.item.file.FlatFileItemReader">
         <bean:property name="resource" 
@@ -84,7 +91,8 @@
 		<bean:property name="corePoolSize" value="5"/>
 		<bean:property name="maxPoolSize" value="15"/>
 	</bean:bean>
-	
+
+	<!--读监听器-->
     <bean:bean id="partitionItemReadListener"
 		class="com.juxtapose.example.ch11.partition.PartitionStepExecutionListener">
 	</bean:bean>

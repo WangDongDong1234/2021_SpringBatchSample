@@ -44,20 +44,21 @@
     <bean:bean id="reader" class="com.juxtapose.example.ch04.stop.AutoReader" />
 	<bean:bean id="writer" class="com.juxtapose.example.ch04.stop.ConsoleWriter" />
 	<bean:bean id="stopListener" class="com.juxtapose.example.ch04.stop.StopStepListener" />
-    
+
+	<!--job自动注册功能-->
 	<bean:bean 
 	    class="org.springframework.batch.core.configuration.support.JobRegistryBeanPostProcessor">
 		<bean:property name="jobRegistry" ref="jobRegistry" />
 	</bean:bean>
-	
+	<!--作业注册器-->
     <bean:bean id="jobRegistry" 
         class="org.springframework.batch.core.configuration.support.MapJobRegistry" />
-    
+    <!--作业浏览窗口-->
     <bean:bean id="jobExplorer"
 		class="org.springframework.batch.core.explore.support.JobExplorerFactoryBean">
 		<bean:property name="dataSource" ref="dataSource" />	
 	</bean:bean>
-	
+	<!--对作业实例进行CRUD和控制处理-->
     <bean:bean id="jobOperator" 
         class="org.springframework.batch.core.launch.support.SimpleJobOperator">
     	<bean:property name="jobRepository" ref="jobRepository" />

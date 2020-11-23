@@ -28,7 +28,7 @@
             </tasklet>
         </step>
     </job>
-    
+
     <!-- 读取信用卡账单文件,CSV格式 -->
     <bean:bean id="csvItemReader"
         class="org.springframework.batch.item.file.FlatFileItemReader" 

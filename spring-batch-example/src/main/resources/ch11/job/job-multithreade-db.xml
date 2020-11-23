@@ -32,7 +32,8 @@
             </tasklet>
         </step>
     </job>
-    
+
+    <!--以JdbcCursorItemReader为例来实现线程安全-->
     <job id="dbSynchronizedJob">
         <step id="dbSynchronizedStep">
             <tasklet task-executor="taskExecutor" throttle-limit="6">
